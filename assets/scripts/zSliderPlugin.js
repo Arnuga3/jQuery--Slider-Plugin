@@ -10,8 +10,16 @@ $.fn.slider_z = function(navbarHeight) {
 	$('.sliderContainer').css({'overflow-x': 'auto', 'padding-bottom': '20px'});
 	$('.sliderImages').css({'overflow-x': 'auto', 'z-index': '9'});
 
+  $(this).find('a').on('mouseover', function() {
+    $(this).find('img').css({'border':'1px solid #aaa'});
+  });
+  $(this).find('a').on('mouseout', function() {
+    $(this).find('img').css({'border':'1px solid white'});
+  });
+
+  var childImages = $(this).find('img');
 	//Number of images
-	var imgAmount = $(this).children().length;
+	var imgAmount = childImages.length;
 	var screenWidth = $(window).width();
 	var screenHeight = $(window).height();
 
@@ -40,10 +48,10 @@ $.fn.slider_z = function(navbarHeight) {
 	"display": "flex", "justify-content": "center", "align-items": "center"});
 
 	//Set the height of gallery to the window height minus controller width
-	$(this).children().css({"height": (screenHeight - controllerHeight - navbarHeight) + "px", "float": "left"});
+	childImages.css({"height": (screenHeight - controllerHeight - navbarHeight) + "px", "float": "left"});
 
 	//Read the width of each picture and make up the gallery width
-	$(this).children().each(function() {
+	childImages.each(function() {
 		var width = $(this).width();
 		galleryWidth += width;
 	});
@@ -51,10 +59,9 @@ $.fn.slider_z = function(navbarHeight) {
 	//Set the gallery container
 	$(this).css({"width": galleryWidth + "px"});
 
-	//Add ids to images and place them in array
-	$(this).children().each(function(ind, val) {
+	//Add ids to images and place them in an array
+	childImages.each(function(ind, val) {
 
-		var img = $(this).attr('id', img + (ind + 1));
 		var width = $(this).width();
 		var leftPosition = $(this).position().left;
 

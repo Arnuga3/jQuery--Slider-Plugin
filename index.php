@@ -18,10 +18,10 @@
 
     <div class="sliderContainer">
 				<div class="sliderImages">
-					<img id="img1" src="assets/images/1.png" />
-					<img id="img3" src="assets/images/2.png" />
-					<img id="img5" src="assets/images/3.png" />
-					<img id="img4" src="assets/images/4.png" />
+					<a href="http://arnuga3.co.uk"><img id="img1" src="assets/images/1.png" /></a>
+					<a href="http://arnuga3.co.uk"><img id="img3" src="assets/images/2.png" /></a>
+					<a href="http://arnuga3.co.uk"><img id="img5" src="assets/images/3.png" /></a>
+					<a href="http://arnuga3.co.uk"><img id="img4" src="assets/images/4.png" /></a>
 				</div>
 				<div class="sliderControl"></div>
 		</div>
