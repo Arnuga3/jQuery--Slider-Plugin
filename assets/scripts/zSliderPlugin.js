@@ -11,10 +11,11 @@ $.fn.slider_z = function(navbarHeight) {
 	$('.sliderImages').css({'overflow-x': 'auto', 'z-index': '9'});
 
   $(this).find('a').on('mouseover', function() {
-    $(this).find('img').css({'border':'1px solid #aaa'});
+    $(this).find('img').css({'filter': 'saturate(3)'});
   });
   $(this).find('a').on('mouseout', function() {
-    $(this).find('img').css({'border':'1px solid white'});
+    $(this).find('img').css({
+        'filter': 'grayscale(50%)'});
   });
 
   var childImages = $(this).find('img');
@@ -48,7 +49,7 @@ $.fn.slider_z = function(navbarHeight) {
 	"display": "flex", "justify-content": "center", "align-items": "center"});
 
 	//Set the height of gallery to the window height minus controller width
-	childImages.css({"height": (screenHeight - controllerHeight - navbarHeight) + "px", "float": "left"});
+	childImages.css({"height": (screenHeight - controllerHeight - navbarHeight) + "px", "float": "left", 'filter': 'grayscale(50%)'});
 
 	//Read the width of each picture and make up the gallery width
 	childImages.each(function() {
@@ -89,5 +90,12 @@ $.fn.slider_z = function(navbarHeight) {
 		var correction = widthDiff / 2;
 
 		$('.sliderContainer').stop().animate({scrollLeft: (imgArr[num - 1].left - correction) + "px"}, scrollSpeed);
+		childImages.each(function(ind, val) {
+			if (ind == (num - 1)) {
+				$(this).css({'filter': 'saturate(3)'});
+			} else {
+				$(this).css({'filter': 'grayscale(50%)'});
+			}
+		});
 	});
 };
