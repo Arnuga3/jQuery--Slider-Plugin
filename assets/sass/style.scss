@@ -1,0 +1,12 @@
+$niceBlue: #1e88e5;
+$whiteGrey: #eee;
+
+.sliderControl {
+	background-color: $whiteGrey;
+  img {
+    box-shadow: 0px 0px 2px 2px #aaa;
+    &:hover {
+      box-shadow: 0px 0px 2px 2px $niceBlue;
+    }
+  }
+}

@@ -18,10 +18,10 @@
 
     <div class="sliderContainer">
 				<div class="sliderImages">
-					<img id="img1" src="assets/images/1.jpg" />
-					<img id="img3" src="assets/images/2.jpg" />
-					<img id="img5" src="assets/images/3.jpg" />
-					<img id="img4" src="assets/images/4.jpg" />
+					<img id="img1" src="assets/images/1.png" />
+					<img id="img3" src="assets/images/2.png" />
+					<img id="img5" src="assets/images/3.png" />
+					<img id="img4" src="assets/images/4.png" />
 				</div>
 				<div class="sliderControl"></div>
 		</div>
