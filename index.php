@@ -9,6 +9,8 @@
 
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="lib/icomoon/style.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 
@@ -23,7 +25,17 @@
 					<a href="http://arnuga3.co.uk"><img id="img5" src="assets/images/3.png" /></a>
 					<a href="http://arnuga3.co.uk"><img id="img4" src="assets/images/4.png" /></a>
 				</div>
-				<div class="sliderControl"></div>
+				<div class="sliderControl">
+          <span id="menuBtn" class="icon-dots-three-vertical"></span>
+          <div id="menuContainer">
+            <ul>
+              <li><a><span class="lnr lnr-bullhorn"></span>View Blogs</a></li>
+              <li><a><span class="lnr lnr-phone"></span>View Services</a></li>
+              <li><a><span class="lnr lnr-store"></span>View Market</a></li>
+              <li><a><span class="lnr lnr-users"></span>View Forums</a></li>
+          </ul>
+          </div>
+        </div>
 		</div>
 
   <script src="assets/scripts/jquery.min.js"></script>
