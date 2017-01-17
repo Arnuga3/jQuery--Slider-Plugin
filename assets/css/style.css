@@ -7,7 +7,7 @@
   .sliderControl #menuBtn {
     position: fixed;
     bottom: 25px;
-    right: 20px;
+    right: 15px;
     font-size: 2em; }
     .sliderControl #menuBtn:hover {
       cursor: pointer; }
@@ -17,7 +17,7 @@
     bottom: 80px;
     right: 0px;
     width: 200px;
-    height: 250px;
+    height: 200px;
     background-color: rgba(0, 0, 0, 0.85);
     border: 1px solid #333; }
     .sliderControl #menuContainer ul {
